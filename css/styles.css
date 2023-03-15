@@ -137,6 +137,13 @@ img {
 .section-title {
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 } 
 
 .section-title {
@@ -177,10 +184,22 @@ img {
 
 .section-benefits-list {
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .section-benefits-item {
     flex-basis: calc((100% - 72px) / 4);
+}
+
+.section-benefits-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.section-benefits-container {
+    background-color: var(--color-shadow); 
+    padding: 24px 100px;
+    border-radius: 4px;
 }
 
 .section-benefits-title {
@@ -209,6 +228,7 @@ img {
 
  .gallery-list {
     gap: 24px;
+    flex-wrap: wrap;
  }
 
  .gallery-item {
@@ -275,6 +295,68 @@ img {
     text-align: center;
 }
 
+.section-team-list {
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.section-team-item {
+    width: 40px;
+    height: 40px;
+}
+
+.team-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color-active);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-team-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/**--CUSTOMERS--**/
+
+.customers {
+    padding-top: 0;
+}
+
+.customers-title {
+    color: var(--color-primary);
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    max-width: 183px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+
+.customers-list {
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.customers-item {
+    max-width: 168px;
+    max-height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    padding: 16px 32px;
+}
+
+.customers-icon {
+
+    width: 104px;
+    height: 56px;
+}
 
 /**--PORTFOLIO--**/
 
@@ -346,6 +428,14 @@ img {
     padding-bottom: 100px;
 }
 
+.footer-container {
+    display: flex;
+}
+
+.footer-container-main {
+    min-width: 264px;
+    margin-right: 120px;
+}
 
 .footer-link {
     color: var(--color-active);
@@ -374,4 +464,38 @@ img {
     color: var(--color-brand);
     margin-top: 16px;
     max-width: 264px;
+}
+
+.footer-list {
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-item {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-title {
+    color: var(--color-fading);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
 }
