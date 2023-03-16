@@ -323,10 +323,6 @@ img {
 
 /**--CUSTOMERS--**/
 
-.customers {
-    padding-top: 0;
-}
-
 .customers-title {
     color: var(--color-primary);
     font-size: 36px;
