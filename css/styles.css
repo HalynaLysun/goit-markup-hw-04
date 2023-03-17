@@ -180,6 +180,13 @@ img {
     border: none;
 }
 
+.section-title-btn:hover,
+.section-title-btn:focus {
+    background-color: var(--color-filtr);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
 /**--BENEFITS--**/
 
 .section-benefits-list {
@@ -348,10 +355,20 @@ img {
     padding: 16px 32px;
 }
 
-.customers-icon {
+.customers-item:hover,
+.customers-item:focus {
+    border: 1px solid var(--color-filtr);
+    border-radius: 4px;
+}
 
+.customers-icon {
     width: 104px;
     height: 56px;
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+    fill: var(--color-filtr)
 }
 
 /**--PORTFOLIO--**/
@@ -506,4 +523,9 @@ img {
 .footer-icon {
     width: 24px;
     height: 24px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: #31D0AA;
 }
